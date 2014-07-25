@@ -1,8 +1,3 @@
-/*
- * CONFIDENTIAL
- * Copyright 2013 Webalo, Inc.  All rights reserved.
- */
-
 package com.mahfouz.multic.core;
 
 import com.mahfouz.multic.uim.XGameGridUiModel;

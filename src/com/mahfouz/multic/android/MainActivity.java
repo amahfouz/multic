@@ -1,4 +1,3 @@
-
 package com.mahfouz.multic.android;
 
 import java.lang.reflect.InvocationHandler;

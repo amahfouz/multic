@@ -1,4 +1,3 @@
-
 package com.mahfouz.multic.android;
 
 import com.mahfouz.multic.R;

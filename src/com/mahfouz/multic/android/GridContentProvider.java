@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.mahfouz.multic.core.Player;
 import com.mahfouz.multic.uim.XGameGridUiModel;
 import com.mahfouz.multic.R;
+
 /**
  * Content provider for the game grid.
  */

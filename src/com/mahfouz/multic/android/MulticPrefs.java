@@ -1,8 +1,3 @@
-/*
- * CONFIDENTIAL
- * Copyright 2014 Webalo, Inc.  All rights reserved.
- */
-
 package com.mahfouz.multic.android;
 
 import android.content.Context;
