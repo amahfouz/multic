@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/default_padding"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingTop="@dimen/default_padding"
+    android:background="@color/activity_background"
+    tools:context=".SettingsActivity" >
+
+    <TextView
+        android:id="@+id/levelLabel"
+        style="@style/RadioGroupLabelStyle"
+        android:text="@string/level_radio_group_label"
+         />
+    
+    <RadioGroup
+        android:id="@+id/difficultyRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:tag="0"
+            android:checked="true"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_silly" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:tag="1"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_easy" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:tag="2"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_medium" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+            android:tag="3"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_hard" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:tag="4"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_expert" />
+<!-- 
+        <RadioButton
+            android:id="@+id/radio5"
+            android:tag="5"
+            style="@style/RadioButtonStyle"
+            android:text="@string/level_insane" />
+-->   
+    </RadioGroup>
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/text_light"
+	    android:layout_marginTop="@dimen/default_padding"
+	    android:paddingTop="@dimen/default_padding"/>
+
+    <TextView
+        style="@style/RadioGroupLabelStyle"
+        android:text="@string/who_starts_label"
+        />
+    	
+    
+    <RadioGroup
+        android:id="@+id/whoStartsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/humanStartsRadio"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:text="@string/you_start" />
+
+        <RadioButton
+            android:id="@+id/computerStartsRadio"
+            style="@style/RadioButtonStyle"
+            android:text="@string/computer_starts" />
+        
+    </RadioGroup>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_light"
+        android:layout_marginTop="@dimen/default_padding"
+        android:paddingTop="@dimen/default_padding"/>
+        
+    <TextView
+        style="@style/RadioGroupLabelStyle"
+        android:text="@string/string_pos_setting_label"
+        />
+    
+    <RadioGroup
+        android:id="@+id/startPosRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/startPosFixedRadio"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:text="@string/start_pos_fixed" />
+
+        <RadioButton
+            android:id="@+id/startPosRandomRadio"
+            style="@style/RadioButtonStyle"
+            android:text="@string/start_pos_random" />
+        
+    </RadioGroup>
+    
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/text_light"
+	    android:layout_marginTop="@dimen/default_padding"
+	    android:paddingTop="@dimen/default_padding"/>
+</LinearLayout>

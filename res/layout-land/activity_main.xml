@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:id="@+id/rootView"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/default_padding"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingTop="@dimen/default_padding"
+    android:baselineAligned="false"
+    android:background="@color/activity_background">
+
+    <LinearLayout
+        android:id="@+id/leftSideLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+	    android:paddingLeft="@dimen/default_padding"
+	    android:paddingRight="@dimen/default_padding"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    
+	    <TextView
+	        android:id="@+id/messageView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/text_light"
+	        android:padding="10dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <!-- Horizontal container for wheels -->
+        <LinearLayout
+	        android:id="@+id/horizLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:paddingTop="@dimen/default_padding"
+	        android:paddingRight="20dp"
+	        android:paddingLeft="20dp"
+	        android:orientation="horizontal" >
+	 
+	        <kankan.wheel.widget.WheelView 
+	            android:id="@+id/firstKnob"
+	            android:layout_weight="6"
+	            android:layout_height="@dimen/wheel_height"
+	            android:layout_width="wrap_content"
+	            android:layout_gravity="center"
+	            android:padding="@dimen/default_padding"
+	            android:gravity="center"/>
+	        
+	        <TextView
+	            android:layout_weight="1"
+	            android:layout_width="30dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/mul_sign_text_size"
+                android:textColor="@color/text_light"
+                android:text="@string/mul_sign"/>
+	        
+	        <kankan.wheel.widget.WheelView 
+	            android:id="@+id/secondKnob"
+	            android:layout_weight="6"
+	            android:layout_height="@dimen/wheel_height"
+	            android:layout_width="wrap_content"
+	            android:layout_gravity="center"
+	            android:padding="@dimen/default_padding"
+	            android:gravity="center"/>
+	    </LinearLayout>
+	    
+    </LinearLayout>
+            
+    <com.mahfouz.multic.android.SquareGridView
+        android:id="@+id/gameBoardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:columnWidth="@dimen/initial_grid_cell_width"
+        android:stretchMode="none"
+        android:horizontalSpacing="@dimen/grid_spacing"
+        android:verticalSpacing="@dimen/grid_spacing"
+        android:numColumns="6"
+        android:padding="@dimen/default_padding"
+        android:scrollbars="none"
+        android:background="@color/grid_background"/>
+    
+</LinearLayout>

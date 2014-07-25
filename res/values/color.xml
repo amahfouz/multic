@@ -1,0 +1,9 @@
+<resources>
+    <color name="grid_background">#FF666666</color>
+    <color name="grid_cell_empty">#FF444444</color>
+    <color name="grid_cell_human">#FF96D267</color>
+    <color name="grid_cell_computer">#FFE08968</color>
+    <color name="grid_cell_text">#FFFFFFFF</color>
+    <color name="activity_background">#FF222222</color>
+    <color name="text_light">#FFFFFFFF</color>
+</resources>
